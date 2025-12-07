@@ -1,4 +1,15 @@
-package PACKAGE_NAME;
+public abstract class Animal {
+    String name;
+    int age;
 
-public class Animal {
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    abstract void makeSound();
+
+    void eat() {
+        System.out.println(name + " is eating");
+    }
 }
